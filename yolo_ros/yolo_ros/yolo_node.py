@@ -150,7 +150,7 @@ class YoloNode(LifecycleNode):
             )
 
         self._sub = self.create_subscription(
-            Image, "/airsim_node/agv1/agv1/front_center_Scene/image", self.image_cb, self.image_qos_profile
+            Image, "/agv1/arducam_frontal/image_raw", self.image_cb, self.image_qos_profile
         )
 
         super().on_activate(state)
