@@ -227,7 +227,7 @@ def generate_launch_description():
             debug_detections_topic = "detections_3d"
 
         yolo_node_cmd = Node(
-            package="yolo_ros",
+            package="tracer_ros_yolo",
             executable="yolo_node",
             name="yolo_node",
             namespace=namespace,
@@ -254,7 +254,7 @@ def generate_launch_description():
         )
 
         tracking_node_cmd = Node(
-            package="yolo_ros",
+            package="tracer_ros_yolo",
             executable="tracking_node",
             name="tracking_node",
             namespace=namespace,
@@ -264,7 +264,7 @@ def generate_launch_description():
         )
 
         detect_3d_node_cmd = Node(
-            package="yolo_ros",
+            package="tracer_ros_yolo",
             executable="detect_3d_node",
             name="detect_3d_node",
             namespace=namespace,
@@ -286,7 +286,7 @@ def generate_launch_description():
         )
 
         debug_node_cmd = Node(
-            package="yolo_ros",
+            package="tracer_ros_yolo",
             executable="debug_node",
             name="debug_node",
             namespace=namespace,

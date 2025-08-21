@@ -30,7 +30,7 @@ ROS 2 wrap for YOLO models from [Ultralytics](https://github.com/ultralytics/ult
 
 ```shell
 cd ~/ros2_ws/src
-git clone https://github.com/mgonzs13/yolo_ros.git
+git clone https://github.com/razekmaiden/yolo_ros.git
 pip3 install -r yolo_ros/requirements.txt
 cd ~/ros2_ws
 rosdep install --from-paths src --ignore-src -r -y
